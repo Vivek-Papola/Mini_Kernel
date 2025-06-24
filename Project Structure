@@ -1,0 +1,36 @@
+microkernel-os/
+├── boot/
+│   ├── boot.asm
+│   ├── grub.cfg
+│   └── linker.ld
+├── kernel/
+│   ├── src/
+│   │   ├── kernel.c
+│   │   ├── gdt.asm
+│   │   ├── idt.c
+│   │   ├── isr.asm
+│   │   ├── vga.c
+│   │   ├── string.c
+│   │   ├── fs/
+│   │   │   ├── vfs.c
+│   │   │   ├── ramfs.c
+│   │   │   ├── file.c
+│   │   │   └── dir.c
+│   │   └── shell/
+│   │       ├── shell.c
+│   │       ├── parser.c
+│   │       └── commands.c
+│   └── include/
+│       ├── kernel.h
+│       ├── vga.h
+│       ├── string.h
+│       ├── fs.h
+│       └── shell.h
+├── lib/
+│   └── libc.c
+├── scripts/
+│   └── build.sh
+├── Makefile
+└── iso/
+    └── boot/
+        └── grub/
