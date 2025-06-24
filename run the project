@@ -1,0 +1,9 @@
+# Build and run
+make
+make run
+
+# Test commands in shell
+mkdir projects
+touch projects/os.txt
+ls projects/
+echo "Microkernel Design" > projects/os.txt
